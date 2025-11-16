@@ -52,6 +52,12 @@ plt.legend()
 plt.show()
 
 
+# EXPECTED RESULTS:
+# Expected stock price: 105.09630199392662
+# Standard deviation: 21.287147787203857
+# Call option price: 8.03437007886014
+# Put option price: 7.942764788599048
+
 
 
 
