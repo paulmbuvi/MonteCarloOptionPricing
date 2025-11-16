@@ -73,3 +73,28 @@ In the GBM model,
 - Without Z, all simulated prices would be identical (no randomness).
 
 - Thus, Z is essential for capturing realistic stock price behavior.
+
+Interpretations for the Graphs
+------------------------------
+Figure: Histogram of Simulated Stock Prices After 1 Year
+
+- This histogram shows the distribution of the 10,000 simulated stock prices generated using the Geometric Brownian Motion (GBM) model. The shape is approximately right-skewed, which is expected because GBM produces log-normally distributed prices. Most simulated prices cluster around the mean value (approximately 105), and this average is marked by the vertical green line.
+
+- The spread of the histogram reflects the volatility (σ = 0.20). A wider spread indicates more uncertainty in the final stock price after one year. The long right tail shows that while most price outcomes fall in a typical range, there is a probability of large upward movements in the stock price — a characteristic of financial returns modeled with GBM.
+
+
+Figure: Comparison of Volatility Levels (σ = 0.10, 0.20, 0.30)
+
+This graph compares the effect of three different volatility levels on the distribution of simulated stock prices after one year.
+With low volatility (σ = 0.10), the distribution is narrow and tightly concentrated around the mean. This indicates low uncertainty and minimal price fluctuation.
+At moderate volatility (σ = 0.20), the spread becomes wider, showing increased variability in possible future stock prices.
+With high volatility (σ = 0.30), the distribution becomes extremely wide and flat, meaning a very large range of possible outcomes — from very low prices to extremely high prices.
+
+The key interpretation is that higher volatility increases the spread of possible stock prices.
+As volatility rises:
+1. The distribution becomes flatter and more dispersed,
+2. Uncertainty in price increases,
+3. There is a greater probability of extreme outcomes (both high and low).
+
+In Conclusion, these histograms illustrate the central impact of volatility in Monte Carlo simulations:
+higher volatility → wider price distribution → higher option values.
