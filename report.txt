@@ -1,0 +1,75 @@
+📄 Monte Carlo Simulation for Option Pricing – Updated Report
+---------------------------------------------------------------
+
+Monte Carlo Simulation for Option Pricing
+Student: Paul Mbuvi
+Course: STA / Financial Mathematics
+Method: Geometric Brownian Motion (GBM)
+Simulations: 10,000
+
+1. Expected Stock Price After 1 Year
+------------------------------------
+
+Expected stock price: 104.984355946451
+
+- This is the mean of all 10,000 simulated stock prices at maturity.
+
+2. Standard Deviation of Simulated Prices
+-----------------------------------------
+
+Standard deviation: 21.145030155066106
+
+- This shows the spread/volatility of the simulated stock prices.
+
+3. Monte Carlo Price of the Call Option
+----------------------------------------
+
+Call option price: 7.917290295148607
+
+- This is based on the discounted payoff
+
+      C=e−rTE[max(ST​−K,0)]
+
+4. Monte Carlo Price of the Put Option
+---------------------------------------
+
+Put option price: 7.932171379202865
+
+This is based on the discounted payoff
+
+      P=e−rTE[max(K−ST​,0)]
+
+5. Effect of Increasing Volatility (σ = 10%, 20%, 30%)
+------------------------------------------------------
+
+From the histograms and simulation:
+
+- Higher volatility widens the distribution of stock prices.
+
+- There is more uncertainty, so the distribution becomes flatter and more spread out.
+
+- Both call and put option values increase with volatility:
+
+- Calls gain value from more upside potential.
+
+- Puts gain value from more downside risk.
+
+Thus, volatility increases option prices overall.
+
+6. Role of the Random Variable
+-------------------------------
+
+In the GBM model,
+
+     ST​=S0​exp((r−0.5σ^2)T+σsqrtT​Z)
+     where Z ~ N(0,1).
+
+- Z represents random shocks affecting the stock price.
+
+- It introduces uncertainty into the stock return.
+
+- It models real-world randomness such as news, market behaviour, and investor reactions.
+
+- Without Z, all simulated prices would be identical (no randomness).
+
+- Thus, Z is essential for capturing realistic stock price behavior.
