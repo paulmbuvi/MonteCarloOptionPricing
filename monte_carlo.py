@@ -39,7 +39,8 @@ print("Put option price:", result[3])
 
 
 
-# ----- PART 3: Test different volatility levels -----
+# Testing the different volatility levels
+
 for sigma_test in [0.10, 0.20, 0.30]:
     ST = S0 * np.exp((r - 0.5 * sigma_test**2) * T + sigma_test * np.sqrt(T) * np.random.normal(0, 1, N))
     plt.hist(ST, bins=40, alpha=0.5, label=f"σ={sigma_test}")
